@@ -1,3 +1,10 @@
+# Free Mag
+
+This project was just hard forked from the below project.
+It's no where near ready for even beta testing at this point.
+Come back some time in the future.
+
+
 # Book Reader
 
 Book Reader simple UI. Based on many open-source projects:
