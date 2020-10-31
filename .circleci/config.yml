@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/android:api-25
+      - image: ccistaging/android:api-25
 
     steps:
       - checkout
