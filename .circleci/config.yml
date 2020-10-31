@@ -9,16 +9,4 @@ jobs:
       - checkout
       - run:
           command: |
-            # Original project uses v4.0.1 but it doesn't support Java 11
-            # com.android.internal.version-check requires 6.5
-            # Java 11 requires 5.0
-            VERSION=6.5
-            wget "https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip"
-            sudo mkdir /opt/gradle
-            sudo unzip -d /opt/gradle gradle-${VERSION}-bin.zip
-            rm gradle-${VERSION}-bin.zip
-            echo 'export PATH=$PATH:/opt/gradle/gradle-6.5/bin' >> $BASH_ENV
-            cat $BASH_ENV
-      - run:
-          command: |
-            gradle build
+            ./gradlew build
